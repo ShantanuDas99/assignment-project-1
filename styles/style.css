@@ -16,6 +16,18 @@ body {
   padding: 49px 229px;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
 .primary-button {
   background: #ff900e;
   border-radius: 8px;
@@ -25,6 +37,32 @@ body {
   font-size: 20px;
   border: 0;
   margin-bottom: 50px;
+}
+
+.grey {
+  color: #727272;
+  font-weight: 500;
+}
+
+.orange {
+  color: #ff900e;
+}
+
+.big {
+  font-weight: 700;
+  font-size: 65px;
+}
+
+.feature-love .line {
+  /* width: 500px; */
+  height: 108px;
+  border-left: 5px solid #ff900e;
+  /* height: 200px; */
+  position: absolute;
+  margin-left: -750px;
+
+  /* transform: translate(-735px); */
+  left: 50%;
 }
 
 /* Nav styles  */
@@ -62,10 +100,52 @@ body {
   font-size: 64px;
   color: #131313;
 }
-.banner .banner-info .banner-subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  color: #727272;
+.banner .banner-info .subtitle {
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+/* Feature styles  */
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 73px;
+  margin-bottom: 130px;
+}
+.features .subtitle {
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+.features .feature-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Feature-love section  */
+.feature-love {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.feature-love .subtitle {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.feature-love .articles article {
+  width: 586px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.feature-love .articles article .article-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+.feature-love .feature-love-button button {
+  padding: 42px 45px;
+  position: relative;
+  transform: translate(-90px, -100px);
 }
