@@ -149,3 +149,45 @@ body {
   position: relative;
   transform: translate(-90px, -100px);
 }
+/* Some Facts styles  */
+.some-facts {
+  padding-left: 240px;
+  padding-right: 240px;
+  margin-bottom: 180px;
+}
+.some-facts .subtitle {
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+.facts {
+  display: flex;
+  gap: 100px;
+}
+.facts .fact {
+  width: 241.83px;
+  /* height: 241.83px; */
+  text-align: center;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 35px;
+  transition: transform 0.2s;
+}
+.facts .fact:hover {
+  transform: scale(1.5);
+  text-decoration: #ffffff;
+  background-color: #ff900e;
+}
+.facts .fact:hover .score,
+.facts .fact:hover .subtitle-fact {
+  color: #ffffff;
+}
+.facts .fact .score {
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+}
+.facts .fact .subtitle-fact {
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
